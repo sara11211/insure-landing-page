@@ -1,7 +1,21 @@
+import NavBar from "./components/NavBar";
+import Hero from "./components/Hero";
+import WeAreDifferent from "./components/WeAreDifferent";
+import HowWeWork from "./components/HowWeWork";
+import Footer from "./components/Footer";
+
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <main>
+      <NavBar />
+      <div className="flex flex-col gap-28">
+        <Hero />
+        <WeAreDifferent />
+        <HowWeWork />
+        <Footer />
+      </div>
+    </main>
+  );
+};
 
-export default App
+export default App;

@@ -24,7 +24,31 @@ import hamburgerIcon from "./icon-hamburger.svg";
 
 import affordablePricesIcon from "./icon-affordable-prices.svg";
 import peopleFirstIcon from "./icon-people-first.svg";
-import snappyProcessIcon from "./icon-snappy-processs.svg"
+import snappyProcessIcon from "./icon-snappy-process.svg"
 
 import imageIntroDesktop from "./image-intro-desktop.jpg";
 import imageIntroMobile from "./image-intro-mobile.jpg";
+
+export {
+    logo,
+    patternFooterDesktop,
+    patternFooterMobile,
+    patternHowWeWorkDesktop,
+    patternHowWeWorkMobile,
+    patternIntroRightDesktop,
+    patternIntroRightMobile,
+    patternIntroLeftDesktop,
+    patternIntroLeftMobile,
+    patternMobileNav,
+    pinterestIcon,
+    twitterIcon,
+    facebookIcon,
+    instagramIcon,
+    closeIcon,
+    hamburgerIcon,
+    affordablePricesIcon,
+    peopleFirstIcon,
+    snappyProcessIcon,
+    imageIntroDesktop,
+    imageIntroMobile
+}
