@@ -1,13 +1,15 @@
-import { useState } from "react"
-import { facebookIcon, instagramIcon, logo, patternFooterMobile, pinterestIcon, twitterIcon } from "../images"
+import { logo, patternFooterDesktop, patternFooterMobile } from "../images"
 
 const Footer = () => {
   return (
-    <footer className="relative flex flex-col items-center justify-center py-20 text-sm font-bold tracking-wider text-center uppercase bg-very-light-gray font-plain text-very-dark-violet">
-      <div className="absolute top-0">
+    <footer className="relative flex flex-col items-center justify-center w-full px-6 py-20 text-sm font-bold tracking-wider text-center uppercase bg-very-light-gray font-plain text-very-dark-violet md:px-8 xl:px-40">
+      <div className="absolute top-0 left-0 md:hidden">
         <img src={patternFooterMobile} alt="pattern" />
       </div>
-      <div className="flex flex-col items-center justify-center gap-7">
+      <div className="absolute top-0 -left-6 max-md:hidden">
+        <img src={patternFooterDesktop} alt="pattern" />
+      </div>
+      <div className="flex flex-col items-center justify-center gap-7 lg:flex-row lg:justify-between lg:w-full">
         <img src={logo} alt="insurance logo" className="z-10"/>
         <ul className="z-10 flex items-center justify-center gap-4">
           <li>
@@ -32,10 +34,10 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="w-[80%] h-px bg-[#E4E4E4] mt-12 mb-4"/>
-      <div>
-        <div>
-        <p className="my-6 text-dark-grayish-violet">our company</p>
+      <div className="z-30 w-full h-px bg-[#E4E4E4] mt-12 mb-4"/>
+      <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between lg:w-full">
+        <div className="flex flex-col lg:items-start lg:text-left">
+        <p className="z-30 my-8 text-dark-grayish-violet">our company</p>
         <ul className="flex flex-col gap-3">
           <li className="hover:underline">
             <a href="#">how we work</a>
@@ -51,8 +53,8 @@ const Footer = () => {
           </li>
         </ul>
         </div>
-        <div>
-        <p className="my-6 text-dark-grayish-violet">help me</p>
+        <div className="flex flex-col lg:items-start lg:text-left">
+        <p className="z-30 my-8 text-dark-grayish-violet">help me</p>
         <ul className="flex flex-col gap-3">
         <li className="hover:underline">
             <a href="#">faq</a>
@@ -68,8 +70,8 @@ const Footer = () => {
           </li>
         </ul>
         </div>
-        <div>
-        <p className="my-6 text-dark-grayish-violet">contact</p>
+        <div className="flex flex-col lg:items-start lg:text-left">
+        <p className="my-8 text-dark-grayish-violet">contact</p>
         <ul className="flex flex-col gap-3">
         <li className="hover:underline">
             <a href="#">sales</a>
@@ -82,8 +84,8 @@ const Footer = () => {
           </li>
         </ul>
         </div>
-        <div>
-        <p className="my-6 text-dark-grayish-violet">others</p>
+        <div className="flex flex-col lg:items-start lg:text-left">
+        <p className="my-8 text-dark-grayish-violet">others</p>
         <ul className="flex flex-col gap-3">
         <li className="hover:underline">
             <a href="#">careers</a>

@@ -8,11 +8,11 @@ const App = () => {
   return (
     <main>
       <NavBar />
-      <div className="flex flex-col gap-28">
+      <div className="flex flex-col items-center gap-28">
         <Hero />
         <WeAreDifferent />
         <HowWeWork />
-        <Footer />
+        <Footer /> 
       </div>
     </main>
   );
