@@ -2,12 +2,6 @@
 
 This is a solution to the [Insure landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8). 
 
-## Table of contents
-
-  - [The challenge](#the-challenge)
-  - [Links](#links)
-  - [Built with](#built-with)
-
 ## The challenge
 
 Users should be able to:
